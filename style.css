@@ -1,0 +1,269 @@
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+body {
+    font-family: 'Arapey', serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+/*     Container    */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/*     Header    */
+.header {
+    margin: 15px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 100%;
+    max-width: 114px;
+    height: auto;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 940px;
+}
+.header__nav__link {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Arapey';
+}
+.header__nav__link--activ {
+    color: #67BA30;
+}
+.submit_btn {
+    width: 6.8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    background: linear-gradient(180deg, rgba(8,217,12,1) 37%, rgba(78,154,27,1) 100%);
+}
+.submit_btn:hover {
+    background: linear-gradient(180deg, rgb(10, 181, 13) 37%, rgb(59, 123, 17) 100%);
+}
+
+
+
+/*     Inner    */
+.wrapper {
+    position: relative;
+    height: 100vh;
+}
+.wrapper__bg{
+    position: absolute;
+    
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    min-width: 627px;
+    overflow: hidden;
+    /* height: auto; */
+    object-fit: cover;
+    object-position: center;
+}
+.wrapper__inner {
+    padding-top: 125px;
+    min-width: 480px;
+    max-width: 490px;
+}
+.wrapper__title {
+    font-size: 47px;
+    margin-bottom: 20px;
+}
+.wrapper__sut-title {
+    font-size: 27px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.serch-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+.serch__input {
+    padding: 1.25rem 1.85rem;
+    border-radius: 5px;
+    border: 1px solid #67BA30;
+    font-size: 1.06rem;
+    width: 100%;
+    
+}
+.search__btn {
+    /* position: relative; */
+    height: 3.75rem;
+    width: 7.5rem;
+    font-weight: 1.12rem;
+}
+/* .search__btn::after {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    background: url(img/search-solid.svg) no-repeat;
+} */
+.icon {
+    padding-right: 0.4rem;
+}
+.search__recently {
+    font-size: 1.23rem;
+    max-width: 37.5rem;
+    margin-bottom: 15px;
+}
+.search__link {
+    color: black;
+    font-weight: italic;
+    margin-right: 5px;
+}
+.search__link:hover {
+    color: rgb(10, 181, 13);
+}
+.search__amount {
+    font-size: 1.23rem;
+}
+
+
+/*     Slider   */
+.section__titile {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.slider__card {
+    position: relative;
+    overflow: hidden;
+    
+    color: white;
+    max-width: 25%;
+    min-width: 300px;
+    max-height: 320px;
+    border-radius: 6px;
+    margin: 12px
+}
+.slider__card__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 320px;
+    padding: 20px;
+}
+.slider__card__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+.slider__card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0) 14.37%, rgba(11, 11, 11, 0.81) 73.44%);
+}
+.slider__card__title {
+    font-size: 1.56rem;
+    margin-bottom: 10px;
+}
+.slider__card__sub-title {
+    font-size: 0.87rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.slider__card__map-link {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    margin: 0 0 10px 20px;
+}
+.slider__card__map-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    background: url(img/Vector.png);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
