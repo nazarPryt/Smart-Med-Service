@@ -27,7 +27,7 @@
                     <a class="header__nav__link header__nav__link--activ" href="#">Акции</a>
                     <a class="header__nav__link" href="#">Контакты</a>
                 </nav>
-                <button class="submit_btn" type="submit"><i class="far fa-user icon"></i>Войти</button>
+                <button class="submit_btn" type="submit">Войти</button>
             </div>
         </div>
     </header>
@@ -41,7 +41,7 @@
                 <h2 class="wrapper__sut-title">Поиск по клиникам, докторам и болезням</h2>
                 <form class="serch-form" action="#" method="get">
                     <input class="serch__input" placeholder="Ключевое слово..." type="search" name="" id="">
-                    <button class="submit_btn search__btn"><i class="fas fa-search icon"></i>Найти</button>
+                    <button class="submit_btn search__btn">Найти</button>
                 </form>
                 <div class="search__recently">
                     <span><strong>Популярные запросы:</strong></span>
@@ -57,7 +57,10 @@
 
     <section class="slider">
         <div class="container">
-            <h1 class="section__titile">Рекомендуемые клиники</h1>
+            <div class="section__inner">
+                <h1 class="section__titile">Рекомендуемые клиники</h1>
+                <button class="section__btn">Все клиники</button>
+            </div>
             <div class="slider">
 
                 <div class="slider__card">
@@ -99,13 +102,77 @@
                         <div class="slider__card__rate"></div>
                     </div>
                 </div>
+            </div><!-- /Slider-->
+        </div><!-- /Container-->
+    </section>
 
+
+    <section>
+        <div class="container">
+            <div class="section__inner">
+                <h1 class="section__title">Направления</h1>
+                <button class="section__btn">Все направления</button>
             </div>
-        </div>
+
+            <div class="cards-section">
+                <div class="card__inner">
+                    <h1 class="card__title">Онкология</h1>
+                    <div class="card__wrapper">
+                        <ul class="card__list">
+                            <li class="card__item">Рак груди</li>
+                            <li class="card__item">Рак простаты</li>
+                            <li class="card__item">Рак легких</li>
+                        </ul>
+                        <ul class="card__list">
+                            <li class="card__item">Меланома</li>
+                            <li class="card__item">Рак желудка</li>
+                            <li class="card__item">Рак поджелудочной железы</li>
+                        </ul>
+                    </div>
+                    <a class="card__btn" href="#">Весь список</a>
+                </div>
+            
+                <div class="card__inner">
+                    <h1 class="card__title">Check Up</h1>
+                    <div class="card__wrapper">
+                        <ul class="card__list">
+                            <li class="card__item">Мужская</li>
+                            <li class="card__item">Женская</li>
+                        </ul>
+                        <ul class="card__list">
+                            <li class="card__item">Детская</li>
+                            <li class="card__item">Специализированная</li>
+                        </ul>
+                    </div>
+                    <a class="card__btn" href="#">Весь список</a>
+                </div>
+        
+                <div class="card__inner">
+                    <h1 class="card__title">Красота</h1>
+                    <ul class="card__list">
+                        <li class="card__item">Увеличение груди</li>
+                        <li class="card__item">РАбдоминопластика</li>
+                        <li class="card__item">Anti age</li>
+                        <li class="card__item">Блефаропластика</li>
+                    </ul>
+                    <a class="card__btn" href="#">Весь список</a>
+                </div>
+            
+                <div class="card__inner">
+                    <h1 class="card__title">Медицина будущего</h1>
+                    <ul class="card__list">
+                        <li class="card__item">Лечение стволовыми клетками</li>
+                        <li class="card__item">ДНК тест</li>
+                        <li class="card__item">Определение рака по моче</li>
+                    </ul>
+                    <a class="card__btn" href="#">Весь список</a>
+                </div>
+            
+            </div><!--  Cards-section-->
+        </div><!--  /Container   -->
     </section>
 
     </main>
-
 
 
 
