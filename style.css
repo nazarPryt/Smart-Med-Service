@@ -449,3 +449,66 @@ body {
     transition: 0.2s linear;
 }
 
+
+
+/*     Footer    */
+.footer {
+    background-color: #2F2F2F;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.7rem 0;
+}
+.footer__nav__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 45.5rem;
+}
+.footer_nav__link, .copyright {
+    color: #A7A7A7;
+    font-size: 0.8rem;
+}
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+}
+.social__link {
+    margin-left: 1rem;
+}
+.social__link__icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
