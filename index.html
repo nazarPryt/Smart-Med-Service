@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
     
-    <title>Document</title>
+    <title>Smart Med</title>
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="container">
             <div class="header__inner">
                 <a href="#"><img class="logo" src="img/logo.png" alt="Smart_service_logo"></a>
@@ -30,9 +31,9 @@
                 <button class="submit_btn" type="submit">Войти</button>
             </div>
         </div>
-    </header>
+    </header> -->
 
-    <main>
+    <!-- <main>
         <section class="wrapper">
             <img class="wrapper__bg"src="img/bg_inner.jpg" alt="bg" >
             <div class="container">
@@ -102,8 +103,8 @@
                             <div class="slider__card__rate"></div>
                         </div>
                     </div>
-                </div><!-- /Slider-->
-            </div><!-- /Container-->
+                </div>
+            </div>
         </section>
 
 
@@ -168,9 +169,9 @@
                         <a class="card__btn" href="#">Весь список</a>
                     </div>
                 
-                </div><!--  Cards-section-->
-            </div><!--  /Container   -->
-        </section>
+                </div>
+            </div>
+        </section> -->
 
 
         <section>
@@ -212,6 +213,21 @@
 
                     <div class="feedback__card">
                         <a class="feedback__card__wrap-title" href="#">
+                            <img class="feedback__card__photo" src="img/feedback_2.jpg" alt="feedback-photo-2">
+                            <h3 class="feedback__card__title">Кангнам Северанс</h3>
+                        </a>
+                        <div class="feedback__card__wrap-name">
+                            <h3 class="feedback__card__name">Akmaral:</h3>
+                            <div class="feedback__card__rate">some rate</div>
+                        </div>
+                        <p class="feedback__card__text">
+                            Клиника очень фешенебельная и мед персонал профессиональный и внимательный. Роза и Асель проделали огромную работу до приезда , отвечали быстро и чётко на все мои вопросы, а Айгерим постоянно была рядом на протяжении всего пребывания 
+                        </p>
+                        <a class="feedback__card__btn" href="#">Подробнее</a>
+                    </div>
+
+                    <div class="feedback__card">
+                        <a class="feedback__card__wrap-title" href="#">
                             <img class="feedback__card__photo" src="img/feedback_3.jpg" alt="feedback-photo-3">
                             <h3 class="feedback__card__title">Оздоровительный Центр«Чаум»</h3>
                         </a>
@@ -224,10 +240,10 @@
                         </p>
                         <a class="feedback__card__btn" href="#">Подробнее</a>
                     </div>
-                </div><!--  /Feedback__wrapper-->
-            </div><!--  /Container  -->
+                </div>
+            </div>
         </section>
-    </main>        
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -252,20 +268,24 @@
                             <a class="footer_nav__link" href="#">СМИ о нас</a>
                             <a class="footer_nav__link" href="#">Контакты</a>
                         </nav>
-                        <div class="copyright">Smart Med Service © 2019</div>
+                        <div class="copyright copyright--large-screen">Smart Med Service © 2019</div>
                     </div>
-                    
-                </div>                           
+                     
+                </div> 
+                <div class="copyright copyright--short-screen">Smart Med Service © 2019</div>                          
                 <nav class="footer__social">
                     <a class="social__link" href="#"><img class="social__link__icon" src="img/whatsapp_icon.svg" alt="whatsapp_icon"></a>
                     <a class="social__link" href="#"><img class="social__link__icon" src="img/youtube_icon.svg" alt="youtube_icon"></a>
-                    <a class="social__link" href="#"><img class="social__link__icon" src="img/facebook_icon.svg" alt="facebook_icon"></a>
+                    <a class="social__link social__link--facebook" href="#"><img class="social__link__icon" src="img/facebook_icon.svg" alt="facebook_icon"></a>
                     <a class="social__link" href="#"><img class="social__link__icon" src="img/vk_icon.svg" alt="vk_icon"></a>
                     <a class="social__link" href="#"><img class="social__link__icon" src="img/telegram_icon.svg" alt="telegram_icon"></a>
                     <a class="social__link" href="#"><img class="social__link__icon" src="img/instagram_icon.svg" alt="instagram_icon"></a>
                 </nav>
             </div>
         </div>
-    </footer>
-</body>
+    </footer>  
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>    
+    <script type="text/javascript" src="app.js"></script>          
 </html>
