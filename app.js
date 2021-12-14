@@ -1,3 +1,16 @@
+$('.slider').slick({
+  prevArrow:'<button type="button" class="slick-prev"><img src="img/prev-arrow.svg" alt=""></button>',
+  nextArrow:'<button type="button" class="slick-next"><img src="img/next-arrow.svg" alt=""></button>',
+  centerMode: true,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  adaptiveHeight: true,
+  variableWidth: true,
+  mobileFirst: true
+
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+});
 
 $('.feedback__wrapper').slick({
   arrows: true,

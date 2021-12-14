@@ -176,14 +176,13 @@ body {
 }
 
 
-/*     Slider   */
-.section__inner {
+/*     Section Wrapper   */
+.section__wrap__title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+    margin: 1rem;
 }
-.section__titile {
+.section__title {
     font-size: 1.75rem;
     font-weight: bold;
 }
@@ -199,18 +198,16 @@ body {
     box-shadow: 0px 0px 5px rgb(59, 123, 17);
     transition: 0.2s linear;
 }
+
+
+/*     Slider   */
 .slider {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 10px;
 }
 .slider__card {
     position: relative;
     overflow: hidden;
-    
     color: white;
-    width: 23%;
     min-width: 250px;
     max-height: 320px;
     border-radius: 6px;
@@ -221,6 +218,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     height: 320px;
+    max-width: 250px;
     padding: 20px;
 }
 .slider__card__bg {
@@ -276,7 +274,7 @@ body {
 
 
 /*     Cards-section    */
-.cards-section {
+.cards-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -286,10 +284,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 45%;
-    max-width: 39.37rem;
-    min-width: 25rem;
-    height: 19.68rem;
-    padding: 2.5rem;
+    max-width: 39.37em;
+    min-width: 25em;
+    height: 19.68em;
+    padding: 2.5em;
     margin: 5px;
     background: #FFFFFF;
     box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.07);
@@ -302,45 +300,45 @@ body {
 }
 .card__title {
     position: relative;
-    font-size: 1.93rem;
+    font-size: 1.93em;
     font-weight: bold;
-    margin-left: 4rem;
+    margin-left: 4em;
 }
 .oncology-icon:before {
     content: "";
     position: absolute;
     display: block;
-    width: 1.87rem;
-    height: 2.37rem;
-    left: -3rem;
+    width: 1.87em;
+    height: 2.37em;
+    left: -3em;
     background: url(img/oncology.svg) no-repeat;
 }
 .check-icon:before {
     content: "";
     position: absolute;
     display: block;
-    width: 1.87rem;
-    height: 2.37rem;
-    left: -3rem;
+    width: 1.87em;
+    height: 2.37em;
+    left: -3em;
     background: url(img/Check_Up.svg) no-repeat;
 }
 .beauty-icon:before {
     content: "";
     position: absolute;
     display: block;
-    width: 1.87rem;
-    height: 2.37rem;
-    left: -3rem;
+    width: 1.87em;
+    height: 2.37em;
+    left: -3em;
     background: url(img/beauty.svg) no-repeat;
 }
 .med-of-future:before {
     content: "";
     position: absolute;
     display: block;
-    width: 2.62rem; 
-    height: 2.12rem;
-    left: -4rem;
-    background: url(img/med_of_the_future.svg) no-repeat
+    width: 2.62em; 
+    height: 2.12em;
+    left: -4em;
+    background: url(img/med_of_the_future.svg) no-repeat;
 }
 .card__wrapper {
     display: flex;
@@ -351,7 +349,7 @@ body {
     flex-wrap: wrap;
 }
 .card__item {
-    font-size: 1.12rem;
+    font-size: 1.12em;
     margin: 5px 0;
 }
 .card__item:hover {
@@ -364,7 +362,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: #67BA30;
-    padding: 1.25rem 1rem;
+    padding: 1.25em 1em;
     width: 100%;
     border: 1px solid #E0E0E0;
     background: #FFFFFF;
@@ -577,8 +575,43 @@ body {
         min-width: 100%;
     }
 }
+@media (min-width: 867px) {
+    .section__title--hidden {
+        display: none;
+    }
+    .section__btn--hiden {
+        display: none;
+    }
+}
+@media (max-width: 866px){
+    .section__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .section__wrap__title{
+        display: none;
+    }
+    .section__title--hidden {
+        display: block;
+        order: 1;
+        margin: 1rem auto 1rem;
+    }
+    .cards-wrap,
+    .slider {
+        order: 2;
+    }
+    .section__btn--hiden {
+        display: block;
+        order: 3;
+        margin: 1rem auto 2rem;
+    }
+
+}
 
 @media (max-width: 483px) {
+    .section_wrap {
+        font-size: 0.8rem;
+    }
     .feedback__card {
         line-height: 1rem;
         padding: 2rem;
