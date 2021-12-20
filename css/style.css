@@ -55,47 +55,51 @@ body {
     max-width: 114px;
     height: auto;
 }
-.header__nav {
+.header__nav__list {
     display: flex;
     justify-content: space-between;
+    padding: 0 0.5rem;
     width: 100%;
     max-width: 940px;
+}
+.header__nav__list li {
+    list-style: none;
+    margin-left: 1rem;
 }
 .header__nav__link {
     text-decoration: none;
     color: black;
     font-size: 17px;
     font-family: 'Arapey';
+    white-space: nowrap;
 }
-.header__nav__link--activ {
+.header__nav__link:hover {
     color: #67BA30;
 }
-.submit_btn {
+.login_btn {
     position: relative;
-    width: 6.8rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    padding-left: 21px;
+    padding: 0.75em 1.2em 0.75em 1.5em;
     color: white;
+    font-size: 1.06rem;
+    font-weight: 400;
     border: none;
     border-radius: 0.3rem;
     background: linear-gradient(180deg, rgba(8,217,12,1) 37%, rgba(78,154,27,1) 100%);
 }
-.submit_btn:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 100;
-    width: 20px;
-    height: 20px;
-    background: url(img/Login.svg) no-repeat;
-}
-.submit_btn:hover {
+.login_btn:hover {
     background: linear-gradient(180deg, rgb(10, 181, 13) 37%, rgb(59, 123, 17) 100%);
 }
-
+.login_btn-icon {
+    position: absolute;
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    left: 0.4em;
+    top: 0.9em;
+}
+.header__burger {
+    display: none;
+}
 
 
 /*     Inner    */
@@ -106,10 +110,10 @@ body {
 .wrapper__bg{
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     z-index: -1;
     width: 100%;
-    min-width: 627px;
+    /* min-width: 627px; */
     overflow: hidden;
     /* height: auto; */
     object-fit: cover;
@@ -117,7 +121,7 @@ body {
 }
 .wrapper__inner {
     padding-top: 125px;
-    min-width: 480px;
+    min-width: 315px;
     max-width: 490px;
 }
 .wrapper__title {
@@ -140,23 +144,25 @@ body {
     font-size: 1.06rem;
     width: 100%;
 }
-.search__btn {
+.submit_btn {
     position: relative;
-    height: 3.75rem;
-    width: 8.5rem;
-    padding-left: 40px;
+    width: 8em;
+    font-size: 1rem;
+    padding-left: 21px;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    background: linear-gradient(180deg, rgba(8,217,12,1) 37%, rgba(78,154,27,1) 100%);
 }
-.search__btn:before {
-    content: "";
+.submit_btn:hover {
+    background: linear-gradient(180deg, rgb(10, 181, 13) 37%, rgb(59, 123, 17) 100%);
+}
+.submit_btn-icon {
     position: absolute;
-    display: block;
-    top: 17px;
-    left: 20px;
-    z-index: 100;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url(img/2561381_search_icon.svg);
-    background-repeat: no-repeat;
+    left: 0.5em;
+    top: 1.2em;
+    width: 1.5em;
+    height: 1.5em;
 }
 .search__recently {
     font-size: 1.23rem;
@@ -303,42 +309,14 @@ body {
     font-size: 1.93em;
     font-weight: bold;
     margin-left: 4em;
+    margin-bottom: 1em;
 }
-.oncology-icon:before {
-    content: "";
+.card__title__icon {
     position: absolute;
     display: block;
-    width: 1.87em;
-    height: 2.37em;
+    width: 2em;
+    height: 1.5em;
     left: -3em;
-    background: url(img/oncology.svg) no-repeat;
-}
-.check-icon:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 1.87em;
-    height: 2.37em;
-    left: -3em;
-    background: url(img/Check_Up.svg) no-repeat;
-}
-.beauty-icon:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 1.87em;
-    height: 2.37em;
-    left: -3em;
-    background: url(img/beauty.svg) no-repeat;
-}
-.med-of-future:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 2.62em; 
-    height: 2.12em;
-    left: -4em;
-    background: url(img/med_of_the_future.svg) no-repeat;
 }
 .card__wrapper {
     display: flex;
@@ -521,8 +499,86 @@ body {
 
 
 
+@media (max-width: 1081px) {
+    .header__nav {
+        position: absolute;
+        top: -100%;
+        width: 320px;
+        background-color: white;
+        z-index: 50;
+    }
+    .header__nav__list {
+        display: block;
+        font-size: 1.37rem;
+        font-weight: bold;
+        padding: 1rem;
+    }
+    .header__nav__list li {
+        margin-bottom: 1rem;
+    }
+    .header__burger--active {
+        top: 4rem;
+        left: 20%;
+        right: 20%;
+        transition: 0.3s linear all;
+    }
+    .login_btn {
+        margin-left: 1rem;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 4rem;
+        height: 2rem;
+        margin-left: auto;
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: #67BA30;
+        width: 100%;
+        height: 0.2rem;
+        left: 0;
+        top: 0.9rem;
+        transition: 0.3s linear;
+    }
+    .header__burger:before,
+    .header__burger:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        background-color: #67BA30;
+        left: 0;
+        transition: 0.3s linear;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
 
-@media (max-width: 1021px){
+
+    .header__burger.header__burger__btn--active:before {
+        transform: rotate(45deg);
+        top: 0.9rem;
+    }
+    .header__burger.header__burger__btn--active:after {
+        transform: rotate(-45deg);
+        bottom: 0.9rem;
+    }
+    .header__burger.header__burger__btn--active span {
+        transform: scale(0);
+    }
+    .wrapper__inner {
+        padding-top: 2rem;
+    }
+
+}
+
+
+
+@media (max-width: 1021px) {
     .footer__inner {
         display: flex;
         flex-direction: column;
@@ -554,8 +610,6 @@ body {
         margin: 0 auto;
     }
 }
-
-
 @media (max-width: 681px) {
     .footer__inner {
         width: 100%;
@@ -605,10 +659,33 @@ body {
         order: 3;
         margin: 1rem auto 2rem;
     }
-
 }
-
+.login_btn--hidden {
+    display: none;
+}
 @media (max-width: 483px) {
+    .header__burger--active {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .header__nav__list {
+        padding: 3rem;
+    }
+    .header__nav__link li {
+        display: block;
+        margin : 0;
+        padding: 0 1rem;
+    }
+    .login_btn {
+        display: none;
+    }
+    .login_btn--hidden {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
     .section_wrap {
         font-size: 0.8rem;
     }

@@ -1,3 +1,22 @@
+let header__burger = document.querySelector('.header__burger');
+let header_menu = document.querySelector('.header__nav');
+let back = document.querySelector('body');
+let header__list = document.querySelector('.header__nav__list');
+
+header__burger.onclick = function(){
+    header__burger.classList.toggle('header__burger__btn--active');
+    header_menu.classList.toggle('header__burger--active');
+    back.classList.toggle('lock');
+}
+
+header__list.onclick = function () {
+    header__list.classList.remove('header__burger--active');
+    back.classList.toggle('lock');
+}
+
+
+
+
 $('.slider').slick({
   prevArrow:'<button type="button" class="slick-prev"><img src="img/prev-arrow.svg" alt=""></button>',
   nextArrow:'<button type="button" class="slick-next"><img src="img/next-arrow.svg" alt=""></button>',
