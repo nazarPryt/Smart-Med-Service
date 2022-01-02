@@ -1,4 +1,4 @@
-@import "style.css"
+@import "media.css";
 
 
 
@@ -509,6 +509,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 .sub-header-title {
     font-size: 18px;
@@ -545,7 +546,7 @@ body {
 
 .treatmen__inner{
     display: grid;
-    grid-template-columns:  450px 1fr;
+    grid-template-columns:  30% 1fr;
     grid-template-areas: "sidebar" "content";
 }
 .sidebar__wrapp {
@@ -554,11 +555,10 @@ body {
 .treatmen-wrap {
     display: flex;
     flex-direction: column;
-    grid-area: "content"
+    grid-area: "content";
+    padding: 10px 30px;
 }
-.treatmen--card_inner {
 
-}
 .sidebar-title {
     font-size: 42px;
     color: #3A3A3A;
@@ -577,7 +577,7 @@ body {
     width: 40px;
     height: 100%;
     top: 0;
-    right: -6%;
+    right: 2%;
     background: url(/img/sidebar__reserch-icon.svg) center no-repeat;
 }
 .sidebar-reserch {
@@ -585,6 +585,9 @@ body {
     border: 1px solid #D6D6D6;
     border-radius: 4px;
     width: 100%;
+}
+.sidebar__list {
+    margin: 30px 0 !important;
 }
 .sidebar__list li {
     list-style: none;
@@ -608,13 +611,39 @@ body {
     left: -35px;
     background: url(/img/sidebar__items-icon.svg) no-repeat;
 }
-
-
-
+.sidebar__discount {
+    max-width: 330px;
+    max-height: 257px;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.sidebar__discount-picture {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40%;
+}
+.sidebar__discount-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sidebar__discount-text {
+    color: #3A3A3A;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 18px 30px;
+}
 .sidebar__articl-title {
     font-size: 28px;
     color: black;
     margin-bottom: 30px;
+}
+.sidebar__articl-list {
+    margin-bottom: 20px !important;
 }
 .sidebar__articl-items {
     list-style: none;
