@@ -109,6 +109,38 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 720px) {
+    .sub-header__inner {
+        flex-direction: column;
+    }
+    .sub-header-title, .sub-header__serch-form{
+        margin-bottom: 1rem;
+    }
+    .treatmen__inner {
+        display: flex;
+        justify-content: center;
+    }
+    .sidebar-title {
+        text-align: center;
+    }
+    .sidebar-form {
+        max-width: 100%;
+    }
+    .sub-header__search-recently {
+        margin: 0;
+    }
+    .card__wrapper {
+        flex-direction: column;
+    }
+    .card__inner {
+        padding: 1rem;
+        min-width: 100%;
+    }
+    .card__title{
+        font-size: 1.5rem;
+    }
+
+}
 @media (max-width: 681px) {
     .footer__inner {
         width: 100%;

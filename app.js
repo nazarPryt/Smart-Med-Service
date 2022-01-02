@@ -72,4 +72,5 @@ $('.feedback__wrapper').slick({
       }
     }]
 });
-img
+const da = new DynamicAdapt("max");  
+da.init();

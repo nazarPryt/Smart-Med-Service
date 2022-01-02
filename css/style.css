@@ -292,7 +292,8 @@ body {
     
     max-width: 39.37em;
     min-width: 25em;
-    height: 19.68em;
+    /* height: 19.68em; */
+    height: 100%;
     padding: 2.5em;
     margin: 5px;
     background: #FFFFFF;
